@@ -7,7 +7,7 @@ function limpiarinput(){
     caja = document.querySelector('#amigo').value = '';
 }
 
-//Funcion para ahgregar amigos al array
+//Funcion para agregar amigos al array
 function agregarAmigo(){
     let amigo = document.getElementById('amigo').value;
 
@@ -40,4 +40,9 @@ function listarAmigos(){
         // Agregar el <li> a la lista
         lista.appendChild(li);
     }
+}
+
+//Funcion para sortear amigo secreto
+function sortearAmigo(){
+    
 }
