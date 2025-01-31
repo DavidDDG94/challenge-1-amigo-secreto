@@ -3,8 +3,8 @@
 let amigos = [];
 
 //Funcion para limpiar input
-function limpiarinput(){
-    caja = document.querySelector('#amigo').value = '';
+function limpiarinput(elemento){
+    caja = document.querySelector(elemento).value = '';
 }
 
 //Funcion para agregar amigos al array
@@ -23,7 +23,7 @@ function agregarAmigo(){
                 console.log(typeof (amigo));
             }
         //Limpiar input
-        limpiarinput();    
+        limpiarinput('#amigo');    
     }
     listarAmigos();
 }
