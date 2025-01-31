@@ -22,7 +22,7 @@ function agregarAmigo(){
                 console.log(amigos);
                 console.log(typeof (amigo));
             }
-        //Limpiar input
+        //Limpiar input por ID #amigo
         limpiarinput('#amigo');    
     }
     listarAmigos();
@@ -33,18 +33,18 @@ function listarAmigos(){
     let lista = document.getElementById('listaAmigos');   
     lista.innerHTML = '';
     for (let i = 0; i < amigos.length; i++) {
-        // Crear un nuevo elemento <li>
+        // Creando un nuevo elemento de tipo <li>
         const li = document.createElement("li");
-        // Asignar el nombre del amigo al contenido del <li>
+        // Asignando el nombre del amigo al contenido del <li>
         li.textContent = amigos[i];
-        // Agregar el <li> a la lista
+        // Agregando el <li> a la lista
         lista.appendChild(li);
     }
 }
 
 //Funcion para sortear amigo secreto
 function sortearAmigo(){
-    //Verificaión de que existan amigos en la lista
+    //Verificamos que existan amigos en la lista
     if(amigos.length === 0){
         alert('No hay amigos en la lista.');
         return;
