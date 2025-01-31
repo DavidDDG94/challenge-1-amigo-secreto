@@ -44,5 +44,15 @@ function listarAmigos(){
 
 //Funcion para sortear amigo secreto
 function sortearAmigo(){
-    
+    //Verificaión de que existan amigos en la lista
+    if(amigos.length === 0){
+        alert('No hay amigos en la lista.');
+        return;
+    } else{
+        //Sorteo de amigo secreto
+        let amigoSecreto = amigos[Math.floor(Math.random() * amigos.length)];
+        console.log(amigoSecreto);
+        //Mostrar amigo secreto
+        document.getElementById('resultado').innerHTML = amigoSecreto;
+    }
 }
